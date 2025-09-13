@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kode+Mono:wght@400..700&display=swap');
+
+
+:root{
+    --bck-color: #FFFCF9;
+    --text-color: #0A0A0C;
+    --btn-color: #F5BD59;
+    --secondary-color: #4E2B0C;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Kode Mono', monospace;
+}
+h5{
+    color: var(--secondary-color);
+}
+.main-btn{
+    background-color: var(--btn-color);
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    transition: all 0.3s ease;
+}
+.main-btn:hover{
+    background-color: #f9b032;
+
+}
+.secondary-btn{
+    border: 2px solid var(--btn-color) !important;
+    color: var(--secondary-color) !important;
+}
+.secondary-btn:hover{
+    background-color: var(--btn-color);
+}
+body{
+    background-color: var(--bck-color);
+}
+.navbar{
+    background-color: var(--bck-color);
+}
+.navbar-link{
+    color: var(--text-color);
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.navbar-link:hover{
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+.fa-star{
+    color: #F5BD59;
+}
+.card{
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+@media screen and (min-width: 776px) {
+    .card-img-top{
+    padding: 15px;
+    height: 150px;
+    object-fit: contain;
+    }
+}
+    
+.flex-basis-50{
+    flex: 0 0 48%;
+    max-width: 50%;
+}
+
+.heart{
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    z-index: -1;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #F5BD59;
+
+}
+.heart2{
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    z-index: -1;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #4E2B0C;
+    
+}
+.feedback .col-8{
+    background-color: #f7ebdf;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.action .container{
+    background-color: #f7ebdf;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
